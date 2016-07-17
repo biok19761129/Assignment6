@@ -1,0 +1,147 @@
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu,Arial,sans-serif;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    background: #f29015;
+    margin: auto;
+    min-height: 100px;
+    overflow: auto;
+}
+#total{
+    background: rgba(0, 0, 0, 0) url("../images/total-bg.png") no-repeat scroll 0 0;
+    height: 72px;
+    line-height: 59px;
+    padding-left: 23px;
+    position: absolute;
+    width: 170px;
+    margin-left: -13px;
+    font-size: 1.2em;
+}
+
+.ombre{
+    text-align: center;
+    text-transform: uppercase;
+    height: 35px;
+    line-height: 2em;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+h1{font-size: 2.5em;}
+
+.form-wrapper{
+    background: #f8e5bd;
+    width: 96%;
+    min-height: 100px;
+    margin-top: 20px;
+    padding: 2%;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+fieldset {border: 0 none;}
+legend {margin-bottom: 20px; font-size: 1.5em}
+
+hr{border: 1px solid #bda990; width: 90%;}
+
+.left{
+    float: left;
+    width: 50%;
+}
+
+.right{
+    float: right;
+    width: 50%;
+}
+
+label{ width: 100%;}
+input[type="text"], input[type="tel"], input[type="email"], select {
+    width: 90%;
+    min-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #bda990;
+    margin-top: 5px;
+    padding-left: 3%;
+    font-size: 1em;
+}
+
+.errormsg{font-size: 0.8em;
+    color: brown;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.valid {
+  background:url("../images/valid.jpg") #fff no-repeat 97% 53%;
+  border: 1px solid #ccc;
+}
+
+.invalid {
+  background:url("../images/invalid.jpg") #fff no-repeat 97% 53%;
+  border: 2px solid red;
+}
+
+input[type="radio"]{
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    background-color: #6d4109;
+    border: 0 none;
+    border-radius: 10px;
+    clear: both;
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 400;
+    height: 50px;
+    margin: 32px auto 31px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    cursor: pointer;
+}
+
+select[disabled]{
+    background-color: #f5ead2; 
+}
+
+input[type="submit"]:hover{
+    color: #f8e5bd;
+    background-color:darkred;
+}
+
+
+form span{font-size: 0.7em;}
+
+footer{
+    min-height: 200px;
+}
+
+
+/* MEDIA QUERIE min 480px
+------------------------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 480px) {
+    
+.left, .right{
+    float: none;
+    width: 100%;
+    }
+}

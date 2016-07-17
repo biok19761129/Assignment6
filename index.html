@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pizza di Papa | Order Form</title>
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <!-- META TAGS
+        ------------------------------------------------------------------------------------------------------------ -->
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS LINKS
+        ------------------------------------------------------------------------------------------------------------ -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- GOOGLE FONTS
+        ------------------------------------------------------------------------------------------------------------ -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  <section id="lightbox" class="lightbox">Are you Done with the Pizza?</section>
+   <main>
+      <section id="total">TOTAL: $0.00</section>
+       <header>
+          <section class="ombre"><strong>Welcome,</strong> place your order below</section>
+           <img src="images/pizza-header.jpg" alt="Pizza Di Papa">
+       </header>
+       <h1>Fast and Convenient</h1>
+       <h2>Pizza Delivery</h2> 
+       <form id="form1"><a href="#form"></a>
+       <section class="form-wrapper"> 
+       
+<!-- Address Information -->
+                   <section class="left">
+                        <fieldset>
+                                <legend>Where should we deliver it?</legend>
+                                <label for="name">*First Name: </label>
+                                <input id="name" type="text">
+                                <div id="nameErrorMSG" class="errormsg"></div>
+                                <label for="lastName">*Last Name: </label>
+                                <input id="lastName" type="text">
+                                <div id="lastNameErrorMSG" class="errormsg"></div>
+                                <label fo="phone">*Phone number: </label>
+                                <input type="text" name="phone" id="phone" placeholder="999-99-9999" title="Hint: Please use the format 999-999-9999">
+                                <div id="phoneErrorMSG" class="errormsg"></div>
+                                <label for="email">*Email: </label>
+                                <input type="text" id="email">
+                                <div id="emailErrorMSG" class="errormsg"></div>
+                                <hr>
+                                <label for="addresstype">Type of Address</label>
+                                <select id="addresstype">
+                                    <option value="house" selected>House</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="business">Business</option>
+                                    <option value="campus">Campus</option>
+                                    <option value="hotel">Hotel</option>
+                                    <option value="dorm">Dorm</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div id="othertypecontainer">
+                                    <label for="othertype">Other type:</label>
+                                    <input type="text" id="othertype"  placeholder="Describe “other” address type"><br>
+                                    <div id="otherErrorMSG" class="errormsg"></div>
+                                </div>
+                                <label for="street">*Street address: </label>
+                                <input type="text" id="street">
+                                <div id="streetErrorMSG" class="errormsg"></div>
+                                <label for="aptnumb">Apt number: </label>
+                                <input type="text" id="aptnumb">
+                                <div id="aptnumbErrorMSG" class="errormsg"></div>
+                                <label for="city">*City: </label>
+                                <input type="text" id="city">
+                                <div id="cityErrorMSG" class="errormsg"></div>
+                                <label for="state">*State: </label>
+                                <input type="text" id="state">
+                                <div id="stateErrorMSG" class="errormsg"></div>	
+                                <label for="zip">*Zip code: </label>
+                                <input type="text" id="zip">
+                                <div id="zipErrorMSG" class="errormsg"></div>
+                                <span>* Denotes required Fields</span>
+                        </fieldset>
+                    </section>
+                    
+    <!-- Build Your pizza -->
+                   <section class="right">
+                        <fieldset>
+                            <legend>Make your own pizza</legend>
+                                 <label for="dough" id="dough">STEP 1: Type of dough</label><br>
+                                 <br>
+                                  <input type="radio" value="hand" name="dough" > Hand Tossed<br>
+                                  <input type="radio" value="thin" name="dough"> Thin Crust<br>
+                                  <input type="radio" value="ny" name="dough"> New York Style<br>
+                                  <input type="radio" value="gluten" name="dough"> Gluten Free <br>
+                                  <br>
+                                  <label for="size">STEP 2: Select your pizza size</label><br>
+                                     
+                                  <select id="pizzaselect" disabled>
+                                  <option value="">-- Select Pizza Type first --</option>
+                                  </select>
+                                 <div id="pizzaErrorMSG" class="errormsg"></div>
+         
+                                    <br>
+                                  <label for="cheese">STEP 3: Whant cheese?</label><br>
+                                  <select id="cheese" disabled>
+                                      <option value="0">Light: no charge</option>
+                                      <option value="0" selected>Normal: no charge</option>
+                                      <option value="2.99">Extra: +$2.99</option>
+                                      <option value="3.99">Double: +$3.99</option>
+                                  </select>
+                                    <br>
+                                  <label for="sauce">STEP 4: Select sauce type</label><br>
+                                   <select id="sauce" disabled>
+                                      <option value="0" selected>Regular tomato: no charge</option>
+                                      <option value="0.99">Heavy tomato: +$0.99</option>
+                                      <option value="1.99">BBQ: +$1.99</option>
+                                  </select>
+                                    <br>
+                                  <label for="toppings" id="toppings">STEP 5: Extra toppings (+$0.99 each)</label><br><br>
+                                  <section class="left">
+                                      <label><input type="checkbox" value="pepperoni" name="toppings" disabled>Pepperoni<br></label>
+                                      <label><input type="checkbox" value="sausage" name="toppings" disabled>Sausage<br></label>
+                                      <label><input type="checkbox" value="ham" name="toppings" disabled>Ham<br></label>
+                                      <label><input type="checkbox" value="bacon" name="toppings" disabled>Bacon<br></label>
+                                      <label><input type="checkbox" value="salami" name="toppings" disabled>Salami<br></label>
+                                      <label><input type="checkbox" value="peppers" name="toppings" disabled>Peppers<br></label>
+                                  </section>
+                                  <section class="right">
+                                     <label><input type="checkbox" value="olives" name="toppings" disabled>Olives<br></label> 
+                                      <label><input type="checkbox" value="jalapenos" name="toppings" disabled>Jalapenos<br></label>
+                                      <label><input type="checkbox" value="mushrooms" name="toppings" disabled>Mushrooms<br></label>
+                                      <label><input type="checkbox" value="pineapple" name="toppings"disabled>Pineapple<br></label>
+                                      <label><input type="checkbox" value="onion" name="toppings" disabled>Onion<br></label>
+                                  </section>
+
+                        </fieldset>
+                    </section>                
+                                 
+       </section>
+           <input type="submit" id="submit" value="Finished Building Pizza">
+            </form>  
+            
+<!-- ************************** Billin info ****************************************** -->
+           
+         <form id="form2"><a href="#form2"></a>
+       <section class="form-wrapper"> 
+       
+<!-- Billing Information -->
+                   <section class="left">
+                        <fieldset>
+                                <legend>Billing information</legend>
+                                <label>
+                                <input type="checkbox" id="sameAs"> Same as shipping information<br><br></label>
+                                <label for="Billingname">*First Name: </label>
+                                <input id="Billingname" type="text">
+                                <div id="BillingnameErrorMSG" class="errormsg"></div>
+                                <label for="BillinglastName">*Last Name: </label>
+                                <input id="BillinglastName" type="text">
+                                <div id="BillinglastNameErrorMSG" class="errormsg"></div>
+                                <label for="Billingaddresstype">Type of Address</label>
+                                <select id="Billingaddresstype">
+                                    <option value="house" selected>House</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="business">Business</option>
+                                    <option value="campus">Campus</option>
+                                    <option value="hotel">Hotel</option>
+                                    <option value="dorm">Dorm</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div id="Billingothertypecontainer">
+                                    <label for="Billingothertype">Other type:</label>
+                                    <input type="text" id="Billingothertype"  placeholder="Describe “other” address type"><br>
+                                    <div id="BillingotherErrorMSG" class="errormsg"></div>
+                                </div>
+                                <label for="Billingstreet">*Street address: </label>
+                                <input type="text" id="Billingstreet">
+                                <div id="BillingstreetErrorMSG" class="errormsg"></div>
+                                <label for="Billingaptnumb">Apt number: </label>
+                                <input type="text" id="Billingaptnumb">
+                                <div id="BillingaptnumbErrorMSG" class="errormsg"></div>
+                                <label for="Billingcity">*City: </label>
+                                <input type="text" id="Billingcity">
+                                <div id="BillingcityErrorMSG" class="errormsg"></div>
+                                <label for="Billingstate">*State: </label>
+                                <input type="text" id="Billingstate">
+                                <div id="BillingstateErrorMSG" class="errormsg"></div>	
+                                <label for="Billingzip">*Zip code: </label>
+                                <input type="text" id="Billingzip" pattern="\d{5}-?(\d{4})?">
+                                <div id="BillingzipErrorMSG" class="errormsg"></div>
+                                <span>* Denotes required Fields</span>
+                        </fieldset>
+                    </section>
+                    
+        <!-- Payment information -->
+                   <section class="right">
+                        <fieldset>
+                            <legend>Payment Information</legend>
+                            
+                            <label for="cardselector">Select type of Card</label><br>
+                                <select id="cardselector">
+                                   <option value="null">--Select Card--</option>
+                                   <option value="visa">Visa</option>
+                                   <option value="master">MasterCard</option>
+                                   <option value="american">American Express</option>
+                                </select>
+                                <div id="cardselectorErrorMSG" class="errormsg"></div>
+                                
+                                <div id="extra">
+                                    <label for="cardnumber">Credit Card Number:</label><br>
+                                    <input type="text" id="cardnumber" maxlength="16"><br>
+                                            <div id="carderrorMSG" class="errormsg"></div><br>
+                                    <label for="cvcnumber">CVC Number</label><br>
+                                    <input type="text" id="cvcnumber" maxlength="4"><br>
+                                            <div id="cvcerrorMSG" class="errormsg"></div><br>
+                                    <label for="cardDate">Card Expiration Date</label><br>     
+                                    <input type="text" id="cardDate" placeholder="MM/YYYY"><br>   
+                                            <div id="dateerrorMSG" class="errormsg"></div><br> 
+                                </div> 
+
+                        </fieldset>
+                    </section>                
+                                 
+       </section>
+           <input type="submit" id="processBT" value="Place Order">
+            </form>  
+                                   
+                                                                                         
+            
+   </main>
+   <footer>
+       
+   </footer>
+    <!-- JS SCRITS
+        ------------------------------------------------------------------------------------------------------------ -->
+    <script type="application/javascript" src="js/fastclick.js"></script>
+     <script src="js/script.js"></script>
+    <script type="application/javascript">
+        window.addEventListener('load', function () {
+            FastClick.attach(document.body);
+        }, false);
+    </script>   
+</body>
+</html>
